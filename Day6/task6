@@ -1,0 +1,32 @@
+ {
+  id: number
+  name: string
+  rollNumber: string
+  course: string
+  email: string
+}
+ StudentList() {
+  const [students, setStudents] = useState<Student[]>([])
+
+  useEffect(() => {
+    fetch("https://api.example.com/students")
+      .then(res => res.json())
+      .then(data => setStudents(data))
+      .catch(err => console.error("Error fetching students:", err))
+  }, [])
+
+  return (
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
+      {students.map(student => (
+        <Card key={student.id} className="p-4 shadow-md rounded-2xl">
+          <CardContent>
+            <h2 className="text-lg font-semibold">{student.name}</h2>
+            <p className="text-gray-500 text-sm">Roll: {student.rollNumber}</p>
+            <p className="text-gray-500 text-sm">Course: {student.course}</p>
+            <p className="text-gray-600 text-sm">📧 {student.email}</p>
+          </CardContent>
+        </Card>
+      ))}
+    </div>
+  )
+}
