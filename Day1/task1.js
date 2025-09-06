@@ -1,0 +1,14 @@
+console.log("Hello World!\n");
+console.log("Mini Task :- 1\n");
+console.log("Student Details :-\n");
+console.log("# Name :- Sautrav Samdarshi(Teamate)\n");
+console.log("# Name :- Shubh Shrivastva(Team Leader)\n");
+console.log("# Name :- Swati Bhagat(teamate)\n");
+console.log("# Team Name :- THE BUCK BUSTERS\n");
+console.log("# Branch :- CSE-AIML\n");
+console.log("# Course :- B.TECH\n");
+console.log("# YEAR :- 2nd\n");
+console.log("# Semester :- 3rd\n");
+console.log("# College Name :- BANSAL INSTITUTE OF SCIENCE AND TECHNOLOGY\n");
+console.log("# College Code :- 0112\n");
+console.log("# City :- Bhopal\n");
